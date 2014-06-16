@@ -2,14 +2,14 @@ package {
 
 import flash.utils.getTimer;
 
-import org.flixel.FlxButton;
-import org.flixel.FlxG;
+import flixel.ui.FlxButton;
+import flixel.FlxG;
 
-import org.flixel.FlxGroup;
-import org.flixel.FlxSprite;
-import org.flixel.FlxState;
-import org.flixel.FlxText;
-import org.flixel.FlxTileblock;
+import flixel.FlxGroup;
+import flixel.FlxSprite;
+import flixel.FlxState;
+import flixel.ui.FlxText;
+import flixel.tile.FlxTileblock;
 
 public class BunnyMarkState extends FlxState {
 

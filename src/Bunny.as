@@ -5,7 +5,7 @@
 package {
 import flashx.textLayout.formats.Float;
 
-import org.flixel.FlxSprite;
+import flixel.FlxSprite;
 
 public class Bunny extends FlxSprite {
 	

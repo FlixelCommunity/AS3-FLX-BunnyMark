@@ -4,7 +4,7 @@
  */
 package {
 
-import org.flixel.FlxGame;
+import flixel.FlxGame;
 
 [SWF(width='640',height='480',backgroundColor='#ffffff',frameRate='30')]
 
