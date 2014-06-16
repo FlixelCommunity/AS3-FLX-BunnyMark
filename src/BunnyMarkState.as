@@ -107,7 +107,7 @@ public class BunnyMarkState extends FlxState {
 	private function addBunnies(numToAdd:int, x:Number = 0, y:Number = 0):void
 	{
 		for (var i:int = 0; i < numToAdd; i++) {
-				var bunny = new Bunny(gravity,x,y);
+				var bunny:Bunny = new Bunny(gravity,x,y);
 				bunnies.add(bunny);
 			}
 	}
@@ -126,13 +126,13 @@ public class BunnyMarkState extends FlxState {
 
 	private function RemoveBunnies(numToRemove:int):void
 	{
-	        var thing = bunnies.members;
+	        var thing:Array = bunnies.members;
 	        if ( bunnies.members!=null ) {
 	            if ( thing.length >=1 ) 
 	            {
 					for (var i:int = 0; i < numToRemove; i++) {
 	                {
-	                    var bunny = bunnies.getFirstExtant();
+	                    var bunny:Bunny = bunnies.getFirstExtant() as Bunny;
 	                    if ( bunny != null ) {
 	                        bunnies.remove(bunny,true);
 	                        bunny.kill();
@@ -155,7 +155,7 @@ public class BunnyMarkState extends FlxState {
 	            	addBunnies(incBunnies,FlxG.mouse.x,FlxG.mouse.y);
 	        }
 
-			var t = flash.utils.getTimer();
+			var t:int = flash.utils.getTimer();
 			pirate.x = int((FlxG.width - pirate.width) * (0.5 + 0.5 * Math.sin(t / 3000)));
 			pirate.y = int(FlxG.height - 1.3 * pirate.height + 70 - 30 * Math.sin(t / 100));
 			var now:Number = t / 1000;

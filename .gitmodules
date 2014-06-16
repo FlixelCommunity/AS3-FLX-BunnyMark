@@ -1,0 +1,4 @@
+[submodule "flixel-dev"]
+	path = flixel-dev
+	url = git@github.com:FlixelCommunity/flixel.git
+	branch = dev
